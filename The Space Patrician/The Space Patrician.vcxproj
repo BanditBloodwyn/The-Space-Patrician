@@ -146,11 +146,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.cpp" />
+    <ClCompile Include="Engine\TSP\Components\InputManager\InputManager.cpp" />
+    <ClCompile Include="Engine\TSP\Components\ObjectManager\ObjectManager.cpp" />
+    <ClCompile Include="Engine\TSP\Components\SoundManager\SoundManager.cpp" />
     <ClCompile Include="Engine\TSP\TSPEngine.cpp" />
     <ClCompile Include="The Space Patrician.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\OLC\olcPixelGameEngine.h" />
+    <ClInclude Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.h" />
+    <ClInclude Include="Engine\TSP\Components\InputManager\InputManager.h" />
+    <ClInclude Include="Engine\TSP\Components\ObjectManager\ObjectManager.h" />
+    <ClInclude Include="Engine\TSP\Components\SoundManager\SoundManager.h" />
     <ClInclude Include="Engine\TSP\TSPEngine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,22 +1,15 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
-// Name:		TSPEngine.h
+// Name:		ObjectManager.h
 // Project:		The Space Patrician
 // Purpose:		
 //
-// Created:		16.04.2020
+// Created:		20.04.2020
 // Author:		Kevin Eichenberg
 //////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma once
 
 
-#include "../OLC/olcPixelGameEngine.h"
-#include "Components/GraphicsManager/GraphicsManager.h"
-#include "Components/InputManager/InputManager.h"
-#include "Components/ObjectManager/ObjectManager.h"
-#include "Components/SoundManager/SoundManager.h"
-
-
-class TSPEngine : public olc::PixelGameEngine
+class ObjectManager
 {
 ////////////////////////////////////////////
 // structures
@@ -27,24 +20,17 @@ class TSPEngine : public olc::PixelGameEngine
 // construction
 ////////////////////////////////////////////
 public:
-	TSPEngine();
-	~TSPEngine();
+	ObjectManager();
+	~ObjectManager();
 
 
 ////////////////////////////////////////////
 // methods
 ////////////////////////////////////////////
-public:
-	bool					OnUserCreate();
-	bool					OnUserUpdate(float fElapsedTime);
 
 
 ////////////////////////////////////////////
 // attributes
 ////////////////////////////////////////////
-private:
-	GraphicsManager*		m_pGraphicsManager;
-	InputManager*			m_pInputManager;
-	ObjectManager*			m_pObjectManager;
-	SoundManager*			m_pSoundManager;
+
 };

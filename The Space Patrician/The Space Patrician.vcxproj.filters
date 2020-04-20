@@ -21,12 +21,36 @@
     <ClCompile Include="Engine\TSP\TSPEngine.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\TSP\Components\SoundManager\SoundManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TSP\Components\ObjectManager\ObjectManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TSP\Components\InputManager\InputManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\OLC\olcPixelGameEngine.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Engine\TSP\TSPEngine.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TSP\Components\SoundManager\SoundManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TSP\Components\ObjectManager\ObjectManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TSP\Components\InputManager\InputManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
