@@ -13,8 +13,19 @@
 
 ObjectManager::ObjectManager()
 {
+	m_mObjects.clear();
 }
 
 ObjectManager::~ObjectManager()
 {
+}
+
+bool ObjectManager::CreateObject(long sObjectID)
+{
+	assert(m_mObjects.find(sObjectID) == m_mObjects.end());
+
+	ObjectBase* pObject = new ObjectBase();
+	m_mObjects[sObjectID] = pObject;
+
+	return true;
 }

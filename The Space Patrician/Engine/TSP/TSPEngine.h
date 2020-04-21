@@ -9,7 +9,7 @@
 #pragma once
 
 
-#include "../OLC/olcPixelGameEngine.h"
+#include <OLC/olcPixelGameEngine.h>
 #include "Components/GraphicsManager/GraphicsManager.h"
 #include "Components/InputManager/InputManager.h"
 #include "Components/ObjectManager/ObjectManager.h"

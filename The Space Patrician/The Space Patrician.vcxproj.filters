@@ -33,6 +33,9 @@
     <ClCompile Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Objects\ObjectBase\ObjectBase.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\OLC\olcPixelGameEngine.h">
@@ -51,6 +54,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Objects\ObjectBase\ObjectBase.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

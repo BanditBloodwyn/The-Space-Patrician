@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
-// Name:		ObjectManager.h
+// Name:		ObjectBase.h
 // Project:		The Space Patrician
 // Purpose:		
 //
@@ -9,12 +9,12 @@
 #pragma once
 
 
-#include <Objects/ObjectBase/ObjectBase.h>
+#include <OLC/olcPixelGameEngine.h>
 #include <map>
-#include <cassert>
+#include <iostream>
 
 
-class ObjectManager
+class ObjectBase
 {
 ////////////////////////////////////////////
 // structures
@@ -25,18 +25,19 @@ class ObjectManager
 // construction
 ////////////////////////////////////////////
 public:
-	ObjectManager();
-	~ObjectManager();
+	ObjectBase();
+	~ObjectBase();
 
 
 ////////////////////////////////////////////
 // methods
 ////////////////////////////////////////////
-	bool							CreateObject(long sObjectID);
+public:
 
 
 ////////////////////////////////////////////
 // attributes
 ////////////////////////////////////////////
-	std::map<long, ObjectBase*>		m_mObjects;
+private:
+	std::map<std::string, olc::Sprite> m_mSprites;
 };
