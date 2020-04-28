@@ -1,24 +1,15 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
-// Name:		GraphicsManager.cpp
+// Name:		Sprites.h
 // Project:		The Space Patrician
 // Purpose:		
 //
-// Created:		20.04.2020
+// Created:		21.04.2020
 // Author:		Kevin Eichenberg
 //////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma once
 
 
-#include "GraphicsManager.h"
-
-
-GraphicsManager::GraphicsManager()
+enum SPRITES
 {
-}
 
-GraphicsManager::~GraphicsManager()
-{
-}
-
-void GraphicsManager::DrawScreen()
-{
-}
+};

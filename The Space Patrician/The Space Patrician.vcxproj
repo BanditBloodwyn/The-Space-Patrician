@@ -159,6 +159,7 @@
     <ClInclude Include="Classes\Objects\ObjectBase\ObjectBase.h" />
     <ClInclude Include="Engine\OLC\olcPixelGameEngine.h" />
     <ClInclude Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.h" />
+    <ClInclude Include="Engine\TSP\Components\GraphicsManager\Sprites.h" />
     <ClInclude Include="Engine\TSP\Components\InputManager\InputManager.h" />
     <ClInclude Include="Engine\TSP\Components\ObjectManager\ObjectManager.h" />
     <ClInclude Include="Engine\TSP\Components\SoundManager\SoundManager.h" />
