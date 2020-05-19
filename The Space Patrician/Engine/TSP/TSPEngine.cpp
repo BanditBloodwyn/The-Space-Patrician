@@ -30,12 +30,17 @@ TSPEngine::~TSPEngine()
 bool TSPEngine::OnUserCreate()
 {
 	// Called once at the start, so create things here
+
+	m_pUniverse = new Universe();
+	m_pUniverse->Create();
+
 	return true;
 }
 
 bool TSPEngine::OnUserUpdate(float fElapsedTime)
 {
 	bool result = TestRoutine();
+	//bool result = DrawScreen();	
 	
 	return result;
 }
@@ -49,6 +54,13 @@ bool TSPEngine::TestRoutine()
 
 	if (GetKey(olc::ESCAPE).bPressed)
 		return false;
+
+	return true;
+}
+
+bool TSPEngine::DrawScreen()
+{
+	Clear(olc::BLACK);
 
 	return true;
 }

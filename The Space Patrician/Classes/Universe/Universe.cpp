@@ -20,3 +20,8 @@ Universe::~Universe()
 {
 
 }
+
+bool Universe::Create()
+{
+	return true;
+}

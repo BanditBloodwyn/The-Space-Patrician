@@ -14,6 +14,7 @@
 #include "Components/InputManager/InputManager.h"
 #include "Components/ObjectManager/ObjectManager.h"
 #include "Components/SoundManager/SoundManager.h"
+#include <Universe/Universe.h>
 
 
 class TSPEngine : public olc::PixelGameEngine
@@ -40,6 +41,8 @@ public:
 
 	bool					TestRoutine();
 
+	bool					DrawScreen();
+
 
 ////////////////////////////////////////////
 // attributes
@@ -49,4 +52,6 @@ private:
 	InputManager*			m_pInputManager;
 	ObjectManager*			m_pObjectManager;
 	SoundManager*			m_pSoundManager;
+
+	Universe*				m_pUniverse;
 };
