@@ -35,9 +35,20 @@ bool TSPEngine::OnUserCreate()
 
 bool TSPEngine::OnUserUpdate(float fElapsedTime)
 {
+	bool result = TestRoutine();
+	
+	return result;
+}
+
+bool TSPEngine::TestRoutine()
+{
 	// called once per frame
 	for (int x = 0; x < ScreenWidth(); x++)
 		for (int y = 0; y < ScreenHeight(); y++)
-			Draw(x, y, olc::Pixel(rand() % 100, rand() % 100, rand() % 100));
+			Draw(x, y, olc::Pixel(rand() % 256, rand() % 256, rand() % 256));
+
+	if (GetKey(olc::ESCAPE).bPressed)
+		return false;
+
 	return true;
 }

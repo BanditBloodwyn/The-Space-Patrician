@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Objects\ObjectBase\ObjectBase.cpp" />
+    <ClCompile Include="Classes\Universe\Universe.cpp" />
     <ClCompile Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.cpp" />
     <ClCompile Include="Engine\TSP\Components\InputManager\InputManager.cpp" />
     <ClCompile Include="Engine\TSP\Components\ObjectManager\ObjectManager.cpp" />
@@ -157,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Objects\ObjectBase\ObjectBase.h" />
+    <ClInclude Include="Classes\Universe\Universe.h" />
     <ClInclude Include="Engine\OLC\olcPixelGameEngine.h" />
     <ClInclude Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.h" />
     <ClInclude Include="Engine\TSP\Components\GraphicsManager\Sprites.h" />

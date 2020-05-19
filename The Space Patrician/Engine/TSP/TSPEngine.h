@@ -38,6 +38,8 @@ public:
 	bool					OnUserCreate();
 	bool					OnUserUpdate(float fElapsedTime);
 
+	bool					TestRoutine();
+
 
 ////////////////////////////////////////////
 // attributes

@@ -36,6 +36,9 @@
     <ClCompile Include="Classes\Objects\ObjectBase\ObjectBase.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Universe\Universe.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\OLC\olcPixelGameEngine.h">
@@ -60,6 +63,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Engine\TSP\Components\GraphicsManager\Sprites.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Universe\Universe.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
