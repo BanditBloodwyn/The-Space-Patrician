@@ -1,24 +1,15 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
-// Name:		TSPEngine.h
+// Name:		Camera.h
 // Project:		The Space Patrician
 // Purpose:		
 //
-// Created:		16.04.2020
+// Created:		20.05.2020
 // Author:		Kevin Eichenberg
 //////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma once
 
 
-#include <OLC/olcPixelGameEngine.h>
-#include "Components/GraphicsManager/GraphicsManager.h"
-#include "Components/InputManager/InputManager.h"
-#include "Components/ObjectManager/ObjectManager.h"
-#include "Components/SoundManager/SoundManager.h"
-#include <Universe/Universe.h>
-#include <Camera/Camera.h>
-
-
-class TSPEngine : public olc::PixelGameEngine
+class Camera
 {
 ////////////////////////////////////////////
 // structures
@@ -29,32 +20,22 @@ class TSPEngine : public olc::PixelGameEngine
 // construction
 ////////////////////////////////////////////
 public:
-	TSPEngine();
-	~TSPEngine();
+	Camera();
+	~Camera();
 
 
 ////////////////////////////////////////////
 // methods
 ////////////////////////////////////////////
 public:
-	bool					OnUserCreate();
-	bool					OnUserUpdate(float fElapsedTime);
-
-	bool					TestRoutine();
-
-	bool					DrawScreen();
+	void				MoveX(double dOffset);
+	void				MoveY(double dOffset);
 
 
 ////////////////////////////////////////////
 // attributes
 ////////////////////////////////////////////
 private:
-	GraphicsManager*		m_pGraphicsManager;
-	InputManager*			m_pInputManager;
-	ObjectManager*			m_pObjectManager;
-	SoundManager*			m_pSoundManager;
-
-	Universe*				m_pUniverse;
-
-	Camera*					m_pCamera;
+	double				m_dPositionX;
+	double				m_dPositionY;
 };

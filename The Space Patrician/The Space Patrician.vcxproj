@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Classes\Camera\Camera.cpp" />
     <ClCompile Include="Classes\Objects\ObjectBase\ObjectBase.cpp" />
     <ClCompile Include="Classes\Universe\Universe.cpp" />
     <ClCompile Include="Engine\TSP\Components\GraphicsManager\GraphicsManager.cpp" />
@@ -157,6 +158,7 @@
     <ClCompile Include="The Space Patrician.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Classes\Camera\Camera.h" />
     <ClInclude Include="Classes\Objects\ObjectBase\ObjectBase.h" />
     <ClInclude Include="Classes\Universe\Universe.h" />
     <ClInclude Include="Engine\OLC\olcPixelGameEngine.h" />

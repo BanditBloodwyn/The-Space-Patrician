@@ -16,10 +16,6 @@ TSPEngine::TSPEngine()
 {
 	sAppName = "Example";
 
-	m_pGraphicsManager	= new GraphicsManager();
-	m_pInputManager		= new InputManager();
-	m_pObjectManager	= new ObjectManager();
-	m_pSoundManager		= new SoundManager();
 }
 
 TSPEngine::~TSPEngine()
@@ -30,9 +26,16 @@ TSPEngine::~TSPEngine()
 bool TSPEngine::OnUserCreate()
 {
 	// Called once at the start, so create things here
+	
+	m_pGraphicsManager = new GraphicsManager();
+	m_pInputManager = new InputManager();
+	m_pObjectManager = new ObjectManager();
+	m_pSoundManager = new SoundManager();
 
 	m_pUniverse = new Universe();
 	m_pUniverse->Create();
+
+	m_pCamera = new Camera();
 
 	return true;
 }
@@ -44,6 +47,15 @@ bool TSPEngine::OnUserUpdate(float fElapsedTime)
 	
 	return result;
 }
+
+bool TSPEngine::DrawScreen()
+{
+	Clear(olc::BLACK);
+
+	return true;
+}
+
+#pragma region TestRoutines
 
 bool TSPEngine::TestRoutine()
 {
@@ -58,9 +70,4 @@ bool TSPEngine::TestRoutine()
 	return true;
 }
 
-bool TSPEngine::DrawScreen()
-{
-	Clear(olc::BLACK);
-
-	return true;
-}
+#pragma endregion
