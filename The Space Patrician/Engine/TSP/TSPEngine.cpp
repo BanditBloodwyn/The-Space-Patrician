@@ -42,30 +42,50 @@ bool TSPEngine::OnUserCreate()
 
 bool TSPEngine::OnUserUpdate(float fElapsedTime)
 {
-	bool result = TestRoutine();
-	//bool result = DrawScreen();	
-	
+	//bool result = TestRoutine(fElapsedTime);
+	bool result = GameRoutine(fElapsedTime);
+
+	if (result)
+		DrawScreen();
+
 	return result;
 }
 
-bool TSPEngine::DrawScreen()
+bool TSPEngine::GameRoutine(float fElapsedTime)
 {
-	Clear(olc::BLACK);
+	////// INPUT //////
+	if (GetKey(olc::ESCAPE).bPressed)
+		return false;
+
+	if (GetKey(olc::W).bHeld)
+		m_pCamera->MoveY(10.0f * fElapsedTime);
+	if (GetKey(olc::A).bHeld)
+		m_pCamera->MoveX(-10.0f * fElapsedTime);
+	if (GetKey(olc::S).bHeld)
+		m_pCamera->MoveY(-10.0f * fElapsedTime);
+	if (GetKey(olc::D).bHeld)
+		m_pCamera->MoveX(10.0f * fElapsedTime);
 
 	return true;
 }
 
+void TSPEngine::DrawScreen()
+{
+	Clear(olc::BLACK);
+	
+	DrawString({ 0, 0 }, m_pCamera->GetPositionString());
+}
+
 #pragma region TestRoutines
 
-bool TSPEngine::TestRoutine()
+bool TSPEngine::TestRoutine(float fElapsedTime)
 {
 	// called once per frame
 	for (int x = 0; x < ScreenWidth(); x++)
 		for (int y = 0; y < ScreenHeight(); y++)
 			Draw(x, y, olc::Pixel(rand() % 256, rand() % 256, rand() % 256));
 
-	if (GetKey(olc::ESCAPE).bPressed)
-		return false;
+
 
 	return true;
 }

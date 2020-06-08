@@ -40,9 +40,10 @@ public:
 	bool					OnUserCreate();
 	bool					OnUserUpdate(float fElapsedTime);
 
-	bool					TestRoutine();
+	bool					GameRoutine(float fElapsedTime);
+	bool					TestRoutine(float fElapsedTime);
 
-	bool					DrawScreen();
+	void					DrawScreen();
 
 
 ////////////////////////////////////////////

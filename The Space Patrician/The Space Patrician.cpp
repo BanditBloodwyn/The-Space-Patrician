@@ -5,7 +5,7 @@ int main()
 {
     TSPEngine Game;
 
-    if (Game.Construct(320, 144, 5, 5))
+    if (Game.Construct(640, 360, 2, 2))
         Game.Start();
 
     return 0;

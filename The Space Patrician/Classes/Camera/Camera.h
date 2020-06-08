@@ -8,6 +8,9 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma once
 
+#include <string>
+
+
 
 class Camera
 {
@@ -28,8 +31,15 @@ public:
 // methods
 ////////////////////////////////////////////
 public:
-	void				MoveX(double dOffset);
-	void				MoveY(double dOffset);
+	void				Update(float fPlayerPositionX, float fPlayerPositionY);
+
+	void				MoveX(float dOffset);
+	void				MoveY(float dOffset);
+
+	void				CenterPlayer(float fPlayerPositionX, float fPlayerPositionY);
+	void				LockOnPlayer(bool bLock);
+
+	std::string			GetPositionString();
 
 
 ////////////////////////////////////////////
@@ -38,4 +48,6 @@ public:
 private:
 	double				m_dPositionX;
 	double				m_dPositionY;
+
+	bool				m_bLockOnPlayer;
 };

@@ -33,11 +33,13 @@ public:
 // methods
 ////////////////////////////////////////////
 public:
+	void								Move(olc::vf2d vDirection);
+	bool								Update();
 
 
 ////////////////////////////////////////////
 // attributes
 ////////////////////////////////////////////
 private:
-	std::map<std::string, olc::Sprite> m_mSprites;
+	std::map<std::string, olc::Sprite>	m_mSprites;
 };

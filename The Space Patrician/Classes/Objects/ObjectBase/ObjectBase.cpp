@@ -19,3 +19,13 @@ ObjectBase::ObjectBase()
 ObjectBase::~ObjectBase()
 {
 }
+
+void ObjectBase::Move(olc::vf2d vDirection)
+{
+
+}
+
+bool ObjectBase::Update()
+{
+	return true;
+}

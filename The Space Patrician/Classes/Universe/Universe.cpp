@@ -25,3 +25,8 @@ bool Universe::Create()
 {
 	return true;
 }
+
+bool Universe::Update()
+{
+	return true;
+}
