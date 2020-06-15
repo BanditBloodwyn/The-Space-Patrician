@@ -11,6 +11,7 @@
 
 #include <Objects/ObjectBase/ObjectBase.h>
 #include <map>
+#include <vector>
 #include <cassert>
 
 
@@ -33,6 +34,7 @@ public:
 // methods
 ////////////////////////////////////////////
 	bool							CreateObject(long sObjectID);
+	std::map<long, ObjectBase*>		GetAllObjects();
 
 
 ////////////////////////////////////////////

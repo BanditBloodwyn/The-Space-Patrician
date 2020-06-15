@@ -29,3 +29,8 @@ bool ObjectManager::CreateObject(long sObjectID)
 
 	return true;
 }
+
+std::map<long, ObjectBase*> ObjectManager::GetAllObjects()
+{
+	return m_mObjects;
+}

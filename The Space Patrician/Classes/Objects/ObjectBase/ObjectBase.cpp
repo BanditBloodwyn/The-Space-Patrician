@@ -29,3 +29,8 @@ bool ObjectBase::Update()
 {
 	return true;
 }
+
+std::map<std::string, olc::Sprite> ObjectBase::GetAllSprites()
+{
+	return m_mSprites;
+}

@@ -74,6 +74,15 @@ void TSPEngine::DrawScreen()
 	Clear(olc::BLACK);
 	
 	DrawString({ 0, 0 }, m_pCamera->GetPositionString());
+
+	for (auto gameObject : m_pObjectManager->GetAllObjects())
+	{
+		for (auto objectSprite : gameObject.second->GetAllSprites())
+		{
+			//gameObject.second->GetAllSprites();
+			//DrawDecal()
+		}
+	}
 }
 
 #pragma region TestRoutines
