@@ -30,7 +30,7 @@ bool ObjectManager::CreateObject(long sObjectID)
 	return true;
 }
 
-std::map<long, ObjectBase*> ObjectManager::GetAllObjects()
+TSPContainer::XList<ObjectBase*> ObjectManager::GetAllObjects()
 {
-	return m_mObjects;
+	return m_mObjects.Values();
 }

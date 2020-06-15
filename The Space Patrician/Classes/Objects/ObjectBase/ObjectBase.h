@@ -12,6 +12,7 @@
 #include <OLC/olcPixelGameEngine.h>
 #include <map>
 #include <iostream>
+#include <Container/TSPContainer.h>
 
 
 class ObjectBase
@@ -26,6 +27,7 @@ class ObjectBase
 ////////////////////////////////////////////
 public:
 	ObjectBase();
+	ObjectBase(long WorldPosX, long WorldPosY);
 	~ObjectBase();
 
 
@@ -33,14 +35,18 @@ public:
 // methods
 ////////////////////////////////////////////
 public:
-	void								Move(olc::vf2d vDirection);
-	bool								Update();
-	std::map<std::string, olc::Sprite>	GetAllSprites();
+	void													Move(olc::vf2d vDirection);
+	bool													Update();
+	TSPContainer::XList<olc::Sprite>						GetAllSprites();
 
 
 ////////////////////////////////////////////
 // attributes
 ////////////////////////////////////////////
 private:
-	std::map<std::string, olc::Sprite>	m_mSprites;
+	TSPContainer::XDictionary<std::string, olc::Sprite>		m_mSprites;
+
+	long	m_WorldPosX;
+	long	m_WorldPosY;
+
 };

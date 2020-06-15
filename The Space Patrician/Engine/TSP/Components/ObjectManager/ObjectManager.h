@@ -10,7 +10,7 @@
 
 
 #include <Objects/ObjectBase/ObjectBase.h>
-#include <map>
+#include <Container/TSPContainer.h>
 #include <vector>
 #include <cassert>
 
@@ -33,12 +33,12 @@ public:
 ////////////////////////////////////////////
 // methods
 ////////////////////////////////////////////
-	bool							CreateObject(long sObjectID);
-	std::map<long, ObjectBase*>		GetAllObjects();
+	bool												CreateObject(long sObjectID);
+	TSPContainer::XList<ObjectBase*>					GetAllObjects();
 
 
 ////////////////////////////////////////////
 // attributes
 ////////////////////////////////////////////
-	std::map<long, ObjectBase*>		m_mObjects;
+	TSPContainer::XDictionary<long, ObjectBase*>		m_mObjects;
 };

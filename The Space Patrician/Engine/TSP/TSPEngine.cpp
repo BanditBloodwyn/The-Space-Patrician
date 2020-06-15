@@ -77,10 +77,9 @@ void TSPEngine::DrawScreen()
 
 	for (auto gameObject : m_pObjectManager->GetAllObjects())
 	{
-		for (auto objectSprite : gameObject.second->GetAllSprites())
+		for (auto objectSprite : gameObject->GetAllSprites())
 		{
-			//gameObject.second->GetAllSprites();
-			//DrawDecal()
+			//DrawDecal(objectSprite)
 		}
 	}
 }

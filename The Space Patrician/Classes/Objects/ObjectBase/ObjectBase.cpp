@@ -16,6 +16,12 @@ ObjectBase::ObjectBase()
 	m_mSprites.clear();
 }
 
+ObjectBase::ObjectBase(long WorldPosX, long WorldPosY) : ObjectBase()
+{
+	m_WorldPosX = WorldPosX;
+	m_WorldPosY = WorldPosY;
+}
+
 ObjectBase::~ObjectBase()
 {
 }
@@ -30,7 +36,7 @@ bool ObjectBase::Update()
 	return true;
 }
 
-std::map<std::string, olc::Sprite> ObjectBase::GetAllSprites()
+TSPContainer::XList<olc::Sprite> ObjectBase::GetAllSprites()
 {
-	return m_mSprites;
+	return m_mSprites.Values();
 }

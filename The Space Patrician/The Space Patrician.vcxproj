@@ -89,7 +89,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\kevin\source\repos\The Space Patrician\The Space Patrician\Engine;C:\Users\kevin\source\repos\The Space Patrician\The Space Patrician\Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kevin\source\repos\The Space Patrician\The Space Patrician\Engine;C:\Users\kevin\source\repos\The Space Patrician\The Space Patrician\Classes;C:\Users\kevin\source\repos\The Space Patrician\The Space Patrician\Framework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -168,6 +168,9 @@
     <ClInclude Include="Engine\TSP\Components\ObjectManager\ObjectManager.h" />
     <ClInclude Include="Engine\TSP\Components\SoundManager\SoundManager.h" />
     <ClInclude Include="Engine\TSP\TSPEngine.h" />
+    <ClInclude Include="Framework\Container\TSPContainer.h" />
+    <ClInclude Include="Framework\Container\XDictionary.h" />
+    <ClInclude Include="Framework\Container\XList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
